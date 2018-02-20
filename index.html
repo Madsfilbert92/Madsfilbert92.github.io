@@ -6,6 +6,7 @@
 <script type="text/javascript" src="D3/d3.js"></script>
 <link rel="stylesheet" type="text/css" media="screen" href="general.css">
 </head>
+<div id="counter"></div>
 <body>
 <script type="text/javascript">
 // Your beautiful D3 code will go here
@@ -13,21 +14,21 @@ var dataset; //Global variable
 d3.csv("test.csv", function(error, data) {
 dataset = data;
 //Once loaded, copy to dataset.
-d3.select("body").selectAll("p")
+d3.select("#counter").selectAll("p")
 	.data(dataset)
 	.enter()
 	.append("p")
 	.text(function(d) {
-	return "I can count up to " + d;
-	});
+	return "I can count up to " + d["Data"];
+	})
 	.style("color", function(d) {
-	if (d > 15) {
+	if (d["Data"] > 15) {
 	//Threshold of 15
 	return "red";
 	} else {
 	return "black";
-}
-});
+	}
+	})
 });
 </script>
 </body>
