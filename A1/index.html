@@ -12,26 +12,56 @@
 		the points in order to distinguish points which have the same value from each other.
 	</p>
 	<h3>Explain in your own words the point of figure 2-3.</h3>
-		Figure 2-3 illustrates how the choice of alignment can change the appearence of the histogram. 
+	<p>Figure 2-3 illustrates how the choice of alignment can change the appearence of the histogram. 
 		when changing the alignment the interval of numbers that should be put in the bin changes, so 
 		the number of observations in the bin might change and thereby change the histogram. In other 
-		words a histogram is not unique.
+		words a histogram is not unique.</p>
 	<h3>When can KDEs be misleading?</h3>
-		KDEs are misleading if you have discrete data where there are no trends in the data. 
+	<p>	KDEs are misleading if you have discrete data where there are no trends in the data. 
 		A KDE estimates a continous function, but if your data is discrete this can be 
 		misleading. Furthermore it assumes that your data 
-		has some kind of trends, but you can not be sure of this before you explore the data.
+		has some kind of trends, but you can not be sure of this before you explore the data.</p>
 	<h3>Janert writes "[CDFs] have less intuitive appeal than histograms or KDEs". What does he mean by that?</h3>
-		Because you no longer look at how much data is a given point, but how much is up to this point, 
-		which can be harder to comprehend.
+	<p>	Because you no longer look at how much data is a given point, but how much is up to this point, 
+		which can be harder to comprehend.</p>
 	<h3>What is a Quantile plot? What is it good for.</h3>
-		It is a CDF but where the x and y axis has switch place. With this you can easily make read as 
-		"x% of the data occurs in y or less". With the example from the book "x% of the requests are responded in less than y seconds"
+	<p>	It is a CDF but where the x and y axis has switch place. With this you can easily make read as 
+		"x% of the data occurs in y or less". With the example from the book "x% of the requests are responded in less than y seconds"</p>
 	<h3>How is a Probablity plot defined? What is it useful for? Have you ever seen one before?</h3>
-		
+	<p>The probability plot is defined by x_i=μ+σ&Phi;^−1(y_i) where μ is the mean, σ is the variance and σ&Phi;^−1 is 
+		the inverse of the gaussian cumulative distribution. From this function we can se that if 
+		we plot the probability plot the points should approximate a straight line with slope σ and intercept at 
+		μ if the data is distributed according to a gaussian distribution.
+		The probability plot is used to confirm whether the data follows a gaussian distribution.</p>
 	<h3>Explain why one has to be careful when using mean, median, and related summary statistics</h3>
+	<p>mean, median and other summary statistics only make sense to interpret if the data is distributed according 
+		to an unimodal distribution. Summary statistics may be very misleading if this is not fulfilled. Consider an 
+		example where the distribution has two "peaks" then you will probably get a mean that is somewhere between the peaks 
+		but you usually interpret the mean as the central tendency in the data but this is not really true if it placed between 
+		the two peaks.</p> 
 	<h3>I love box plots. When are box plots most useful?</h3>
+	<p>Box plots have a lot of different information in them, such as outliers, median, the inter-quartile range and outliers. It is 
+		especially useful when you start out your data exploration. You can easily get a sense if the data is symmetric, and how the data is distributed between 
+		the head and the tail and you can spot outliers. Furthermore you can use boxplots to compare distribution between different datasets such that 
+		you can find out which one you want to investigate further.</p>
 	<h3>The book doesn't mention violin plots. Are those better or worse than box plots? Why?</h3>
+	<p>When you use a box plot there is some loss of data i.e. you can't see the distribution of the data. The violin plots make 
+		up for this by not only having the same information as box plots but also showing the distribution of the data. Thereby 
+		you can also get a better of data that does not have a unimodal distribution. However they may not be as good for 
+		explanatory data visualisation as not many people know them. You therefore have to make a good description of the plot if you 
+		want to use it for communication.</p>
+
+	<h2>Part 2: DAOST Chapter 3 Questions</h2>
+	<h3>Looking at Fig 3-1, Janert writes "the data itself shows clearly that the amount of random noise in the data is small". What do you think his argument is?</h3>
+    <h3>Can you think of a real-world example of a multivariate relationship like the one in Fig 3-3 (lower right panel)?
+	<h3>What are the two methods Janert metions for smoothing noisy data? Can you think of other ones?</h3>
+	<h3>What are residuals? Why is it a good idea to plot the residuals of your fit?</h3>
+	<h3>Explain in your own words the point of the smooth tube in figure 3-7.</h3>
+	<h3>What kind of relationships will a semi-log plot help you discover?</h3>
+	<h3>What kind of functions will loglog plots help you see?</h3>
+	<h3>What the h#ll is banking and what element from our visual system does it use to help us see patterns? What are potential problems with banking?</h3>
+	<h3>I think figure 3-14 makes an important point about linear fits that is rarely made. What is it?</h3>
+	<h3>Summarize the discussion of Graphical Analysis and Presentation Graphics on pp. 68-69 in your own words.</h3>
 <script type="text/javascript">
 </script>
 </body>
