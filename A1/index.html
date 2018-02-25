@@ -53,15 +53,43 @@
 
 	<h2>Part 2: DAOST Chapter 3 Questions</h2>
 	<h3>Looking at Fig 3-1, Janert writes "the data itself shows clearly that the amount of random noise in the data is small". What do you think his argument is?</h3>
-    <h3>Can you think of a real-world example of a multivariate relationship like the one in Fig 3-3 (lower right panel)?
+	<p>Looking at the plot it looks like the data follows some sort of function or system without having points that differ from this not even with a 
+	small displacement of a point.</p>  
+	<h3>Can you think of a real-world example of a multivariate relationship like the one in Fig 3-3 (lower right panel)?</h3>
+	<p>A real world example of multivariat realtionship could be a relationship between age and the weight of a human being. 
+	Age could be related a little with weight of humans because when they grow older they become bigger but other 
+	factors such as nutrition and gender also plays a role.</p>
 	<h3>What are the two methods Janert metions for smoothing noisy data? Can you think of other ones?</h3>
+	<p>Janert mentions weighted splines and LOESS. You could also use a moving average or a weighted moving average(which is a special case of LOESS)</p>
 	<h3>What are residuals? Why is it a good idea to plot the residuals of your fit?</h3>
+	<p>A residual is the difference between your smoothed approximation and the actual data. It gives you an idea 
+		of how well the smoothing actually fits the data. If your model is good the residuals should be balanced and they should 
+		be free of trends(Else you can correct your smoothing according to the trend to make it better). 
+	</p>
 	<h3>Explain in your own words the point of the smooth tube in figure 3-7.</h3>
+	<p> After creating your smoothing, you make two sets of datapoints, those with negative residuals and does with positive 
+	residuals. Now you create a smoothing over each of these two datasets. You know have a band in which the majority of 
+	points lie. With this we can spot potential outliers i.e. points outside the band.</p>
 	<h3>What kind of relationships will a semi-log plot help you discover?</h3>
+	<p>It will help you discover if there is a exponential relationship between the x- and y-axis. On a semi-log plot 
+	an exponential realtionship will become linear. Thereby you can easily read-off the relative change in the data.</p>
 	<h3>What kind of functions will loglog plots help you see?</h3>
+	<p>With loglog plots power-law relationships become linear. That is if both x- and y-axis span many orders of magnitude.</p>
 	<h3>What the h#ll is banking and what element from our visual system does it use to help us see patterns? What are potential problems with banking?</h3>
+	<p>Humans are best at seing change at approximately 45 degrees. Banking scales the aspect rations such that the 
+	slopes become approximately 45 degrees. Banking is not very useful if the data is to skewed. You simply can not 
+	correct the slopes. Furthermore the human eye prefer formats of roughly 4 by 3, therefore banked graphs can 
+	become "uneasy" on the eye.</p>
 	<h3>I think figure 3-14 makes an important point about linear fits that is rarely made. What is it?</h3>
+	<p>There is asymmetry between two variables i.e. you get different solution if you regress y on x or x on y. 
+	Therefore linear regression is not a best fit but a best predictor.</p>
 	<h3>Summarize the discussion of Graphical Analysis and Presentation Graphics on pp. 68-69 in your own words.</h3>
+	<p>Graphical analysis is also known as exploratory data visualisation. It is used to gain knowledge about a dataset. 
+	When doing graphical analysis you want to make it easy to iterate several amounts of time therefore you do 
+	not concern yourself that much about labels, legends and other things that makes the graph prettier.
+	Presentation graphics is also known as explanatory data visualisation. In creating presentation graphics you want 
+	to communicate results and knowledge about the data that you already know. Make sure to make the graphics easy to understand and 
+	explain them such that a new viewer can gain knowledge.</p> 
 <script type="text/javascript">
 </script>
 </body>
